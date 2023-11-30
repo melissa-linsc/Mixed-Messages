@@ -1,0 +1,129 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #49012E;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: Roco-one;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Roco-one;
+    src: url("Roca-One Font/RocaOne-Rg.woff");
+}
+
+h2 {
+    color: white;
+    letter-spacing: 0.05rem;
+}
+
+.main-button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+} 
+
+button {
+    cursor: pointer;
+}
+
+#btn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 1.5rem 24rem;
+    border-radius: 2rem;
+    padding: 2rem 20rem;
+    border: none;
+    font-family: 'Roco-one';
+    color: #FF8BE5;
+    background-color: rgba(239,236,255,0.15);
+    font-size: 3rem;
+    white-space: nowrap;
+    width: 40rem;
+}
+
+#btn:hover {
+    background-color: #FF8BE5;
+    color: #49012E;
+}
+
+/* .main-button:hover h1 {
+    color: #49012E;
+} */
+
+h1 {
+    color: #FF8BE5;
+    font-size: 4rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.book-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #621344;
+    border: #FF8BE5 solid 0.5rem;
+    margin: 0rem 10rem ;
+    visibility: hidden;
+}
+
+p {
+    color: white;
+}
+
+#book-description, #book-title {
+    padding: 0rem 2rem;
+}
+
+.image-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.book-cover-container {
+    display: flex;
+    float: left;
+    width: 100px;
+    height: 500px;
+    padding: 20px;
+}
+
+.book-info-text-container {
+    padding-left: 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+    .book-cover-container {
+        display: none;
+    }
+    .book-info-text-container {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .book-info-container {
+        margin: 0rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .book-info-container {
+        margin: 0rem 2rem;
+    }
+    #book-title {
+        font-size: 3rem;
+    }
+}
+
+
+
